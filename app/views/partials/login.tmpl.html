@@ -1,0 +1,8 @@
+<input type="checkbox" ng-model="showControl">Display form</input>
+<div ng-form="loginForm" ng-hide="!showControl" class="login-form">
+	<input type="text" ng-model="user.name" />
+	<input type="password" ng-model="user.password" />
+	<ng-transclude></ng-transclude>
+	<button ng-click="submitLogin()">Login</button>
+	<button ng-click="submitRegister()">Register</button>
+</div>
