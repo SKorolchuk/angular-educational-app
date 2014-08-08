@@ -1,7 +1,9 @@
-<h3 class="masthead-brand">Cover{{$path()}}</h3>
+<h3 class="masthead-brand">Cover /{{$state.current.name}}</h3>
 <ul class="nav masthead-nav" bs-nav>
-	<li ng-class="{active: $path() == '/'}"><a href="#/">Home</a></li>
-	<li ng-class="{active: $path() == '/features'}"><a href="#/features">Features</a></li>
-	<li ng-class="{active: $path() == '/contact'}"><a href="#/contact">Contact</a></li>
-	<li ng-class="{active: $path() == '/test'}"><a href="#/test">Test Page</a></li>
+	<li ng-class="{active: $state.current.name == 'root'}"><a ui-sref="root">Home</a></li>
+	<li ng-class="{active: $state.current.name == 'features'}"><a ui-sref="features">Features</a></li>
+	<li ng-class="{active: $state.current.name == 'contact'}"><a ui-sref="contact">Contact</a></li>
+	<li ng-class="{active: $state.current.name == 'test'}"><a ui-sref="test">Test Page</a></li>
+	<li ng-class="{active: $state.current.name == 'products'}"><a ui-sref="products">Products</a></li>
+	<li ng-class="{active: $state.current.name == 'statistics'}"><a ui-sref="statistics">Statistics</a></li>
 </ul>

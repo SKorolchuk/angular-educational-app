@@ -1,0 +1,11 @@
+<div class="product-container">
+	<div ng-repeat="product in products">
+		<span class="panel-title" ng-bind-template="Product with id#{{product.id}}"></span>
+		<br/>
+		<span ng-bind-template="Product name is {{product.name}}"></span>
+		<br/>
+		<span ng-bind-template="Price: {{product.price | currency }}"></span>
+		<br/>
+		<button class="btn btn-default" ng-click="goToDetails(product)">Go To Details</button>
+	</div>
+</div>

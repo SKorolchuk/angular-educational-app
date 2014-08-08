@@ -1,0 +1,7 @@
+<div ng-repeat="product in products | filter:isCurrentProduct">
+	<span class="panel-title" ng-bind-template="Product with id#{{product.id}}"></span>
+	<br/>
+	<span  ng-bind-template="Product name is {{product.name}}"></span>
+	<br/>
+	<button class="btn btn-default" ng-click="goBack()">Go Back</button>
+</div>

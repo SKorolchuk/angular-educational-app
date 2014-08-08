@@ -61,6 +61,51 @@ body {
   div[ng-custom-grid] {
 	background: transparent;
   }
+
+  .product-container {
+	height: 50vh;
+	overflow-y: scroll;
+	width: 100vw;
+	align-content: center;
+	position: fixed;
+	left: 0;
+	bottom: 25vh;
+
+	div {
+	  margin: 3vh 1vw 3vh 1vw;
+	  padding: 0.5vh 0.5vw 0.5vh 1.5vw;
+	  span, button {
+		margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+		color: #232323;
+	  }
+
+	  border-radius: 20px;
+
+	}
+
+	div:nth-of-type(odd) {
+	  background: #efefef;
+	}
+
+	div:nth-of-type(even) {
+	  background: #a1ef3f;
+	}
+  }
+
+  .chart {
+	width: 40vw;
+	height: 32vh;
+  }
+
+  table {
+	height: 60vh;
+	overflow-y: scroll;
+	width: 130vw;
+	align-content: center;
+	position: fixed;
+	left: 5vw;
+	bottom: 15vh;
+  }
 }
 
 .login-form {

@@ -3,24 +3,41 @@
 app = angular.module 'SKorolchuk.AngularStudy', [
     'ngAnimate',
     'ngRoute',
-		'ngGrid'
+		'ngGrid',
+		'ui.router',
+		'angularCharts'
   ]
 
 app.constant 'version', 'v0.1.0'
-.config ($locationProvider, $routeProvider) ->
+.config ($locationProvider, $stateProvider, $urlRouterProvider) ->
+	$locationProvider.html5Mode true
+	$urlRouterProvider.otherwise '/'
 
-  $locationProvider.html5Mode(false);
+	$stateProvider
+	.state 'root',
+			url: '/',
+			templateUrl: 'views/home.html'
+	.state 'features',
+			url: '/features',
+			templateUrl: 'views/features.html'
+	.state 'contact',
+			url: '/contact',
+			templateUrl: 'views/contact.html'
+	.state 'test',
+			url: '/test',
+			controller: 'TestCtrl'
+			templateUrl: 'views/test.html'
+	.state 'products',
+			url: '/products'
+			controller: 'ProductCtrl'
+			templateUrl: 'views/products.html'
+	.state 'product_info',
+			url: '/productInfo/:id'
+			controller: 'ProductCtrl'
+			templateUrl: 'views/productInfo.html'
+	.state 'statistics',
+			url: '/products/statistics'
+			controller: 'StatisticCtrl'
+			templateUrl: 'views/statistics.html'
 
-  $routeProvider
-  .when '/',
-      templateUrl: 'views/home.html'
-  .when '/features',
-      templateUrl: 'views/features.html'
-  .when '/contact',
-      templateUrl: 'views/contact.html'
-  .when '/test',
-      controller: 'TestCtrl'
-      templateUrl: 'views/test.html'
-  .otherwise
-      redirectTo: '/'
 
