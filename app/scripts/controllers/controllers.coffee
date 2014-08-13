@@ -77,3 +77,8 @@ angular.module 'SKorolchuk.AngularStudy'
 				timer = $timeout () ->
 					alert("You switch to #{newVal}")
 				, 350
+
+
+
+.controller 'TreeCtrl', ($scope) ->
+	$scope.ops = 0
