@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MangofileScanUpload.jnlp">
+  <information>
+    <title>Mangofile scan upload</title>
+    <vendor>Oxagile</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+	<jar href="MangofileScanUploadSwing.jar"/>
+    <jar href="lib/resteasy/commons-io-2.1.jar" size="163151" download="eager" />
+    <jar href="lib/resteasy/commons-logging-1.1.1.jar" size="60686" download="eager" />
+    <jar href="lib/resteasy/httpclient-4.2.1.jar" size="427021" download="eager" />
+    <jar href="lib/resteasy/httpcore-4.2.1.jar" size="223374" download="eager" />
+    <jar href="lib/itext/itextpdf-5.5.2.jar" size="2139261" download="eager" />
+    <jar href="lib/resteasy/jackson-annotations-2.3.2.jar" size="36521" download="eager" />
+    <jar href="lib/resteasy/jackson-core-2.3.2.jar" size="199553" download="eager" />
+    <jar href="lib/resteasy/jackson-databind-2.3.2.jar" size="915096" download="eager" />
+    <jar href="lib/resteasy/jackson-jaxrs-base-2.3.2.jar" size="27584" download="eager" />
+    <jar href="lib/resteasy/jackson-jaxrs-json-provider-2.3.2.jar" size="16511" download="eager" />
+    <jar href="lib/resteasy/jackson-module-jaxb-annotations-2.3.2.jar" size="31636" download="eager" />
+    <jar href="lib/resteasy/jaxrs-api-3.0.7.Final.jar" size="107122" download="eager" />
+    <jar href="lib/resteasy/mail-1.5.0-b01.jar" size="519087" download="eager" />
+    <jar href="lib/morena/morena.jar" size="128732" download="eager" />
+    <jar href="lib/morena/morena7.jar" size="86928" download="eager" />
+    <jar href="lib/morena/morena7_osx.jar" size="32058" download="eager" />
+    <jar href="lib/morena/morena7_win.jar" size="249298" download="eager" />
+    <jar href="lib/morena/morena_license.jar" size="649" download="eager" />
+    <jar href="lib/morena/morena_windows.jar" size="300401" download="eager" />
+    <jar href="lib/resteasy/resteasy-client-3.0.7.Final.jar" size="139000" download="eager" />
+    <jar href="lib/resteasy/resteasy-jackson2-provider-3.0.7.Final.jar" size="10758" download="eager" />
+    <jar href="lib/resteasy/resteasy-jaxrs-3.0.7.Final.jar" size="821598" download="eager" />
+    <jar href="lib/resteasy/resteasy-multipart-provider-3.0.7.Final.jar" size="72668" download="eager" />
+
+  </resources>
+  <application-desc width="350" height="230" main-class="Main"  name="MangofileScanUpload" />
+  <update check="background"/>
+</jnlp>

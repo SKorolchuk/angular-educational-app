@@ -33,8 +33,5 @@
     "ng-grid": "~2.0.12",
     "angular-ui-router": "~0.2.10",
     "angular-charts": "~0.2.4"
-  },
-  "resolutions": {
-    "react": "0.9.*"
   }
 }
